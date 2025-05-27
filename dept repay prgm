@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+   int a,b,c;
+   int interest,totalamount,discount,finalamount;
+   scanf("%d %d %d", &a, &b, &c);
+   interest = (a * b * c)/ 100;
+   totalamount= a + interest;
+   discount= 0.02 * interest;
+   finalamount = totalamount - discount;
+   printf("%.2d \n", interest);
+   printf("%.2d \n", totalamount);
+   printf("%.2d \n", discount);
+   printf("%.2d \n", finalamount);
+
+    return 0;
+}
